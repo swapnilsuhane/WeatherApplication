@@ -1,6 +1,7 @@
 WeatherApplication
 ==================
 
+
 Web Application for displaying United States City's Temperature(F) Using ZipCode
 
 Please follow below steps to setup and deploy the web application.
@@ -36,6 +37,7 @@ Please follow below steps to setup and deploy the web application.
     Select 'Eclipse Git Team Provider' and click Next, Finish
     This will install Git plugin into eclipse so you can directly import git project into eclipse.
     Also install GitHub in you local machine from github.com
+
 
 
 Now we have everything setup so we are ready to Deploy/ Test/ Run.
@@ -80,6 +82,14 @@ Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
 -    If you enter any invalid zipcode (ex. 100) you will get validation message 'Invalid ZipCode Format'
 -    If you enter any valid zipcode that does not exist (ex. 10000) you will get a javascript validation message 'ZipCode Not Found !!'
 
+#  Importing Existing Maven Project into eclipse
+-     You can also import the maven application into eclipse
+-     Import the project using below eclipse path. File -> Import -> Existing Maven Projects -> Next -> Browse
+-     Save the zip content from gits into your local machine and unzip it somewhere. 
+-     Now select the maven project unzipped folder in your local machine. It will find the pom.xml
+-     Select the pom.xml and click Next
+-     Select all the jars files in the link and click Finish.
+-     You have successfully imported Maven 'WeatherApp' project into eclipse.
 
 # Import application using WeatherApp.war
 -   You can also import the war file directly to deploy into tomcat and run the webApp.
@@ -92,7 +102,3 @@ Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
 # Running Junit Test on Eclipse
 -   Right click on WeatherApp project in the eclipse and goto Run As -> Junit Test
 -   In the Junit tab you will see Green bar along with test counts if all tests are successful.
-
-
-
-
