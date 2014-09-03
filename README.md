@@ -5,7 +5,7 @@ Web Application for displaying United States City's Temperature(F) Using ZipCode
 
 Please follow below steps to setup and deploy the web application.
 
-# Environmental Setup- 
+# Environmental Setup
    (Ignore if you already have all java setup on your machine)
    Before starting build/deploy of application make sure you have below setup on your machine.
 
@@ -62,12 +62,14 @@ Tests run: 15, Failures: 0, Errors: 0, Skipped: 0
 
 # Running Maven application on Tomcat Server in eclipse
 -   Before running application on server please add maven jar dependency in eclipse else you will get error.
--   Right click on WeatherApp project in the eclipse -> Properties -> Deployment Assembly -> Add -> Java Build Path Entries
--   Select Maven Dependencies then click Ok/Finish. It will add dependent jar path in eclipse. 
+-   Right click on WeatherApp project in the eclipse Properties -> Deployment Assembly -> Add -> Java Build Path Entries
+-   Select 'Maven Dependencies' then click OK/Finish. It will add dependent jar path in eclipse. 
 -   Now Right click on WeatherApp project in the eclipse and goto Run As -> Run on Server
--   Select existing tomcat server that we created above and click Finish.
+-   Choose 'Manually define a new server' option. Select Apache > 'Tomcat v7.0  Server' > click Next.
+-    Select Tomcat directory ex. 'D:\Java\Tomcat 7\apache-tomcat-7.0.53' where your tomcat exist in your local machine. (If don't have please install from apache site)
+    Select JRE as jdk1.7.0_xx and click Finish
 -   Now we are good to start tomcat server. Right click on server and start it.
--   If you see any error while starting tomcat server please check the console logs and check you have all environmental setup on eclipse as mentione above. 
+-   If you see any error while starting tomcat server please check the console logs and check you have all environmental setup on eclipse as mentioned above. 
 -   Check the application is running using URL: http://localhost:8080/WeatherApp/
 
 
